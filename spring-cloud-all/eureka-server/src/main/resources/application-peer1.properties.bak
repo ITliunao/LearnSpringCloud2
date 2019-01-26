@@ -1,0 +1,36 @@
+## peer1配置
+
+## peer1 端口 9091
+## peer2 端口 9092
+## 服务器服务端口
+server.port=9091
+
+eureka.instance.hostname=peer1
+
+## peer2主机: peer2,端口: 9092
+peer2.server.host = peer2
+peer2.server.port = 9092
+
+## 向 peer2 注册中心注册
+eureka.client.serviceUrl.defaultZone = http://${peer2.server.host}:${peer2.server.port}/eureka
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
